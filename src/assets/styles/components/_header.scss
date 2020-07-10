@@ -1,0 +1,14 @@
+.header {
+    &_fluid {
+        background-color: #282d30;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo-img {
+        margin: 10px 0 -10px 0;
+    }
+}
