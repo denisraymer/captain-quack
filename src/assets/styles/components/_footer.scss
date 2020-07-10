@@ -1,0 +1,17 @@
+.footer {
+    margin-top: auto;
+
+    &_fluid {
+        background-color: #282d30;
+    }
+
+    &__copyright {
+        font: {
+            family: 'Roboto Light';
+            size: 11px;
+        }
+        text-align: center;
+        color: #fff;
+        margin: 30px 0;
+    }
+}
