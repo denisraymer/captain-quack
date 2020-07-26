@@ -1,18 +1,16 @@
 import React from 'react';
 import Header from './components/header';
-import ContentForm from './components/ContentForm/ContentForm';
-import ProductList from './components/ProductList/ProductList';
 import {Footer} from './components/footer';
+import Products from './containers/Products';
 
 function App() {
     return (
         <React.Fragment>
             <Header/>
-            <ContentForm/>
-            <ProductList/>
+            <Products/>
             <Footer/>
         </React.Fragment>
-    );
+    )
 }
 
 export default App;
