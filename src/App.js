@@ -1,19 +1,13 @@
 import React from 'react';
-import Header from './components/header';
-import {Footer} from './components/footer';
-import Products from './containers/Products';
-import Management from './containers/Management';
-import ErrorBoundary from './containers/ErrorBoundary';
+import HomePage from './page/HomePage';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-function App() {
+const App = () => {
     return (
-        <ErrorBoundary>
-            <Header/>
-            <Management/>
-            <Products/>
-            <Footer/>
-        </ErrorBoundary>
-    )
+        <Router>
+            <Route path='/' component={HomePage}/>
+        </Router>
+    );
 }
 
 export default App;
