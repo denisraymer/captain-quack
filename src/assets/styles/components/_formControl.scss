@@ -1,0 +1,11 @@
+.form-control {
+    &-error {
+        border-color: #f5c6cb;
+        box-shadow: 0 0 0 0.2rem #f8d7da;
+    }
+
+    &-warning {
+        border-color: #ffeeba;
+        box-shadow: 0 0 0 0.2rem #fff3cd;
+    }
+}
