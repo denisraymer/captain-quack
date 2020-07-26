@@ -3,15 +3,16 @@ import Header from './components/header';
 import {Footer} from './components/footer';
 import Products from './containers/Products';
 import Management from './containers/Management';
+import ErrorBoundary from './containers/ErrorBoundary';
 
 function App() {
     return (
-        <React.Fragment>
+        <ErrorBoundary>
             <Header/>
             <Management/>
             <Products/>
             <Footer/>
-        </React.Fragment>
+        </ErrorBoundary>
     )
 }
 
