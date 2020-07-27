@@ -1,41 +1,89 @@
 import React from 'react';
-import {Button, Container} from 'react-bootstrap';
+import {
+    Grid,
+    Container,
+    Paper,
+    TableContainer,
+    Button,
+    Table,
+    TableHead,
+    TableRow,
+    TableBody,
+    withStyles
+} from '@material-ui/core';
+import {CustomTableCell} from './CustomTableCell';
+import {CustomTableRow} from './CustomTableRow';
+
+const CustomTableButton = withStyles({
+    root: {
+        borderRadius: 50,
+        backgroundColor: 'transparent',
+        height: 40,
+        '&:hover': {
+            backgroundColor: '#282d30',
+            color: '#fff'
+        },
+        '& span.MuiButton-label': {
+            fontSize: 16,
+            fontFamily: `'Roboto', sans-serif`,
+            fontWeight: 200,
+            textTransform: 'none',
+            color: '#8b9497',
+            marginTop: 2,
+            '& span.MuiButton-endIcon': {
+                marginLeft: 2,
+                marginTop: '-2px'
+            },
+            '& svg': {
+                fontSize: 16
+            }
+        }
+    }
+})(Button);
 
 function ProductList(props) {
     const {products, eventDeleteProduct} = props;
 
     return (
         <Container>
-            <table className="table">
-                <thead className="thead-dark">
-                <tr>
-                    <th scope="col">Название</th>
-                    <th scope="col">Год</th>
-                    <th scope="col">Цвет</th>
-                    <th scope="col">Статус</th>
-                    <th scope="col" colSpan='2'>Цена</th>
-                </tr>
-                </thead>
-                <tbody>
-                {products.map(product => {
-                    return (
-                        <tr key={product._id}>
-                            <td>{product.title}</td>
-                            <td>{product.year}</td>
-                            <td>
-                                <div className='status-color' style={{background: `${product.color}`}}/>
-                            </td>
-                            <td>{product.status}</td>
-                            <td>{product.price}</td>
-                            <td width='140'>
-                                <Button variant="link" type="submit"
-                                        onClick={() => eventDeleteProduct(product._id)}>Удалить</Button>
-                            </td>
-                        </tr>
-                    )
-                })}
-                </tbody>
-            </table>
+            <Grid container>
+                <div className="product-list">
+                    <TableContainer component={Paper}>
+                        <Table aria-label="customized table">
+                            <TableHead>
+                                <TableRow>
+                                    <CustomTableCell width='580'>Название</CustomTableCell>
+                                    <CustomTableCell width='100' align="center">Год</CustomTableCell>
+                                    <CustomTableCell width='100' align="center">Цвет</CustomTableCell>
+                                    <CustomTableCell width='150' align="left">Статус</CustomTableCell>
+                                    <CustomTableCell align="left" colSpan='2'>Цена</CustomTableCell>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {products.map(product => (
+                                    <CustomTableRow key={product._id}>
+                                        <CustomTableCell component="th" scope="row">
+                                            {product.title}
+                                        </CustomTableCell>
+                                        <CustomTableCell align="center">{product.year}</CustomTableCell>
+                                        <CustomTableCell align="center">
+                                            <div className='status-color' style={{background: `${product.color}`}}/>
+                                        </CustomTableCell>
+                                        <CustomTableCell align="left">{product.status}</CustomTableCell>
+                                        <CustomTableCell align="left">{product.price} руб.</CustomTableCell>
+                                        <CustomTableCell align="left">
+                                            <CustomTableButton
+                                                onClick={() => eventDeleteProduct(product._id)}
+                                                color="primary"
+                                                type="submit">Удалить</CustomTableButton>
+                                        </CustomTableCell>
+                                    </CustomTableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+                </div>
+            </Grid>
         </Container>
     )
 }
