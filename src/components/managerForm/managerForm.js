@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Col, Container, Form, Row} from 'react-bootstrap';
 import {Field, reduxForm} from 'redux-form';
-import {renderField} from './renderField';
+import RenderField from './renderField';
 import {alphaNumeric, numeric, required} from './validatesManagerForm';
 import {renderSelectField} from './renderSelectField';
 
@@ -14,7 +14,7 @@ function managerForm(props) {
                     <Col>
                         <Field
                             className='form-control'
-                            component={renderField}
+                            component={RenderField}
                             validate={required}
                             label='Название'
                             warn={alphaNumeric}
@@ -23,7 +23,7 @@ function managerForm(props) {
                     <Col>
                         <Field
                             className='form-control'
-                            component={renderField}
+                            component={RenderField}
                             validate={required}
                             label='Год'
                             warn={numeric}
@@ -32,7 +32,7 @@ function managerForm(props) {
                     <Col>
                         <Field
                             className='form-control'
-                            component={renderField}
+                            component={RenderField}
                             validate={required}
                             label='Цена'
                             warn={numeric}
@@ -43,7 +43,7 @@ function managerForm(props) {
                     <Col>
                         <Field
                             className='form-control'
-                            component={renderField}
+                            component={RenderField}
                             validate={required}
                             label='Описание'
                             warn={alphaNumeric}
