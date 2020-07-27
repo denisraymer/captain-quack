@@ -1,14 +1,12 @@
 import React from 'react';
-import {Col, Container, Row} from 'react-bootstrap';
+import Grid from '@material-ui/core/Grid';
 
 export function Title() {
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <div className='title'>¡Ay caramba!</div>
-                </Col>
-            </Row>
-        </Container>
+        <Grid container>
+            <Grid item xs='12'>
+                <div className='title'>¡Ay caramba!</div>
+            </Grid>
+        </Grid>
     )
 }
