@@ -46,8 +46,7 @@ export const renderSelectField = ({input, meta: {touched, error, warning}}) => {
             <Select
                 {...input}
                 displayEmpty
-                inputProps={{ 'aria-label': 'Without label' }}
-            >
+                inputProps={{ 'aria-label': 'Without label' }}>
                 <MenuItem value='' disabled>Статус</MenuItem>
                 <MenuItem value='В наличии'>В наличии</MenuItem>
                 <MenuItem value='Ожидается'>Ожидается</MenuItem>

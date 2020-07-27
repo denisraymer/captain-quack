@@ -9,6 +9,7 @@ const CustomRenderField = withStyles({
             fontSize: 14,
             fontFamily: `'Roboto', sans-serif`,
             fontWeight: 700,
+            color: '#999',
             marginTop: 8,
             marginLeft: 10
         },
@@ -24,6 +25,9 @@ const CustomRenderField = withStyles({
             borderBottom: '2px solid #dcdcdc',
             height: 40,
             padding: '0 0 0 10px'
+        },
+        '& div.MuiInput-underline:before': {
+            borderBottom: '2px solid #dcdcdc'
         },
         '& div.MuiInput-underline:after': {
             borderBottom: '2px solid #000'
