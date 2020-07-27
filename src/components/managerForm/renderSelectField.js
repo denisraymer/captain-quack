@@ -17,6 +17,9 @@ const CustomFormControl = withStyles({
         '& div.MuiInput-underline:after': {
             borderBottom: '2px solid #000'
         },
+        '& div.MuiInput-underline.Mui-error:after': {
+            borderBottom: '2px solid #f44336'
+        },
         '& div.MuiSelect-select:focus': {
             backgroundColor: 'transparent'
         },
