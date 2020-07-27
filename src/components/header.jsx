@@ -1,17 +1,12 @@
 import React from 'react';
-import {Col, Container, Row} from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 
 export function Header () {
     return (
-        <Container fluid className='header header_fluid'>
-            <Row>
-                <Col>
-                    <div className="header__logo">
-                        <img className='header__logo-img' src={logo} alt='Captain quack logo'/>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+        <div className='header header_fluid'>
+            <div className="header__logo">
+                <img className='header__logo-img' src={logo} alt='Captain quack logo'/>
+            </div>
+        </div>
     );
 }
