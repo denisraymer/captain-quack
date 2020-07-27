@@ -1,17 +1,17 @@
 import React from 'react';
-import {Col, Container, Row} from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
+import Grid from '@material-ui/core/Grid';
 
 export function Header () {
     return (
-        <Container fluid className='header header_fluid'>
-            <Row>
-                <Col>
+        <div className='header header_fluid'>
+            <Grid container>
+                <Grid item xs='12'>
                     <div className="header__logo">
                         <img className='header__logo-img' src={logo} alt='Captain quack logo'/>
                     </div>
-                </Col>
-            </Row>
-        </Container>
+                </Grid>
+            </Grid>
+        </div>
     );
 }
