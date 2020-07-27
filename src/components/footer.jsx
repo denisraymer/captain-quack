@@ -1,14 +1,14 @@
 import React from 'react';
-import {Col, Container, Row} from 'react-bootstrap';
+import Grid from '@material-ui/core/Grid';
 
 export function Footer() {
     return (
-        <Container fluid className='footer footer_fluid'>
-            <Row>
-                <Col>
+        <div className='footer footer_fluid'>
+            <Grid container>
+                <Grid item xs='12'>
                     <div className="footer__copyright">© 2015 CAPTAIN QUACK <br/> Десница тысячелетия и моллюск!</div>
-                </Col>
-            </Row>
-        </Container>
+                </Grid>
+            </Grid>
+        </div>
     )
 }
