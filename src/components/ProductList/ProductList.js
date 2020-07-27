@@ -23,20 +23,15 @@ const CustomTableButton = withStyles({
             backgroundColor: '#282d30',
             color: '#fff'
         },
+        '&:hover span.MuiButton-label': {
+            color: '#fff'
+        },
         '& span.MuiButton-label': {
             fontSize: 16,
             fontFamily: `'Roboto', sans-serif`,
-            fontWeight: 200,
             textTransform: 'none',
             color: '#8b9497',
-            marginTop: 2,
-            '& span.MuiButton-endIcon': {
-                marginLeft: 2,
-                marginTop: '-2px'
-            },
-            '& svg': {
-                fontSize: 16
-            }
+            marginTop: 2
         }
     }
 })(Button);
@@ -64,6 +59,9 @@ function ProductList(props) {
                                     <CustomTableRow key={product._id}>
                                         <CustomTableCell component="th" scope="row">
                                             {product.title}
+                                            <div className="product-list__description">
+                                                {product.description}
+                                            </div>
                                         </CustomTableCell>
                                         <CustomTableCell align="center">{product.year}</CustomTableCell>
                                         <CustomTableCell align="center">
