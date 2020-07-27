@@ -2,7 +2,7 @@ import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 
-let Header = () => {
+export function Header () {
     return (
         <Container fluid className='header header_fluid'>
             <Row>
@@ -14,6 +14,4 @@ let Header = () => {
             </Row>
         </Container>
     );
-};
-
-export default Header;
+}

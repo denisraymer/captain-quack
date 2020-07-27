@@ -1,0 +1,30 @@
+.not-found {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font: {
+            family: 'Roboto', sans-serif;
+            weight: 700;
+            size: 80px;
+        }
+        color: #000;
+    }
+
+    &__image {
+        animation: image-spin infinite 5s linear;
+        margin: 0 15px;
+    }
+}
+
+@keyframes image-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
