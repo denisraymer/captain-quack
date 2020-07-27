@@ -17,15 +17,11 @@ class ErrorBoundary extends Component {
     };
 
     render() {
-        const {hasError} = this.state;
-
-        if (hasError) {
-            return (<ErrorIndicator errorMessage='Error-2'/>)
+        if (this.state.hasError) {
+            return <ErrorIndicator errorMessage='Что-то крякнулась...'/>
         }
 
-        return (
-            this.props.children
-        );
+        return this.props.children;
     };
 }
 
