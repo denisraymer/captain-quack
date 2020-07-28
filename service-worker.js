@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/captain-quack/precache-manifest.139c84d11b7d5bd8a63e3f8661774857.js"
+  "/captain-quack/precache-manifest.71ad03658d54d3ebe7c957fd133bbc9a.js"
 );
 
 self.addEventListener('message', (event) => {
