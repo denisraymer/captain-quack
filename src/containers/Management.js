@@ -21,7 +21,7 @@ class Management extends Component {
 const putActionToProps = (dispatch) => {
     return {
         createProduct: bindActionCreators(createProduct, dispatch)
-    }
-}
+    };
+};
 
 export default connect(null, putActionToProps)(Management);
