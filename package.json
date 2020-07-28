@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "clsx": "^1.1.1",
     "lodash": "^4.17.19"
   },
   "proxy": "https://agile-taiga-33505.herokuapp.com/"
