@@ -2,6 +2,7 @@
   "name": "captain-quack",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://denisraimer.github.io/captain-quack/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -9,6 +10,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -25,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
