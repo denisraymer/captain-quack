@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/captain-quack/static/css/main.41dd9701.chunk.css",
-    "main.js": "/captain-quack/static/js/main.06902ffa.chunk.js",
-    "main.js.map": "/captain-quack/static/js/main.06902ffa.chunk.js.map",
+    "main.js": "/captain-quack/static/js/main.1f539cc2.chunk.js",
+    "main.js.map": "/captain-quack/static/js/main.1f539cc2.chunk.js.map",
     "runtime-main.js": "/captain-quack/static/js/runtime-main.4a7a5de6.js",
     "runtime-main.js.map": "/captain-quack/static/js/runtime-main.4a7a5de6.js.map",
     "static/js/2.a18849b5.chunk.js": "/captain-quack/static/js/2.a18849b5.chunk.js",
     "static/js/2.a18849b5.chunk.js.map": "/captain-quack/static/js/2.a18849b5.chunk.js.map",
     "index.html": "/captain-quack/index.html",
-    "precache-manifest.a33096897aea4b853a4b00b895387091.js": "/captain-quack/precache-manifest.a33096897aea4b853a4b00b895387091.js",
+    "precache-manifest.e5c57e383ee18a57f156c22aa09c229f.js": "/captain-quack/precache-manifest.e5c57e383ee18a57f156c22aa09c229f.js",
     "service-worker.js": "/captain-quack/service-worker.js",
     "static/css/main.41dd9701.chunk.css.map": "/captain-quack/static/css/main.41dd9701.chunk.css.map",
     "static/js/2.a18849b5.chunk.js.LICENSE.txt": "/captain-quack/static/js/2.a18849b5.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.4a7a5de6.js",
     "static/js/2.a18849b5.chunk.js",
     "static/css/main.41dd9701.chunk.css",
-    "static/js/main.06902ffa.chunk.js"
+    "static/js/main.1f539cc2.chunk.js"
   ]
 }
