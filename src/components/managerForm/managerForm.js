@@ -1,11 +1,12 @@
 import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 import RenderField from './renderField';
-import {alphaNumeric, numeric, required} from './validatesManagerForm';
+import {numeric, required} from './validatesManagerForm';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import {renderSelectField} from './renderSelectField';
 import {CustomButton} from './CustomButton';
-import {Grid, Container, FormLabel, FormControl, RadioGroup} from '@material-ui/core';
+import {Grid, Container, FormControl, FormLabel, RadioGroup} from '@material-ui/core';
+import RenderRadioField from './renderRadioField';
 
 function managerForm(props) {
     const colorScheme = ['fff', '000', 'cbcbcc', 'd74345', '88c504'];
@@ -19,7 +20,6 @@ function managerForm(props) {
                             component={RenderField}
                             validate={required}
                             label='Название'
-                            warn={alphaNumeric}
                             name='title'/>
                     </Grid>
                     <Grid item xs={6} sm={4} md={4}>
@@ -48,18 +48,24 @@ function managerForm(props) {
                             name='description'/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={4}>
-                        <FormControl component="fieldset">
-                            <FormLabel component="legend" className='label'>Цвет</FormLabel>
-                            <RadioGroup row>
-                                {colorScheme.map((color, index) => {
-                                    return (
-                                        <label key={`${index}${color}`}>
-                                            <Field name='color' component='input' type='radio' value={`#${color}`}/>
-                                        </label>
-                                    )
-                                })}
-                            </RadioGroup>
-                        </FormControl>
+                        <div className="manager-radio-form">
+                            <FormControl component='fieldset'>
+                                <FormLabel component='legend' className='label'>Цвет</FormLabel>
+                                <RadioGroup defaultValue='female' row>
+                                    {colorScheme.map((color, index) => {
+                                        return (
+                                            <label key={`${index}${color}`}>
+                                                <Field
+                                                    name='color'
+                                                    component={RenderRadioField}
+                                                    type='radio'
+                                                    value={`#${color}`}/>
+                                            </label>
+                                        )
+                                    })}
+                                </RadioGroup>
+                            </FormControl>
+                        </div>
                     </Grid>
                     <Grid item xs={6} sm={4} md={4}>
                         <Field
