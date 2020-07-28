@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14b4924320701c10c0a80724b4b022ed",
+    "revision": "c83fbfeb49ed3a7c35278a1569d7d4bc",
     "url": "/captain-quack/index.html"
   },
   {
-    "revision": "cebb00e1ccb17f976a50",
+    "revision": "44cabda56e0a4e53b169",
     "url": "/captain-quack/static/css/main.41dd9701.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/captain-quack/static/js/2.12532d22.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cebb00e1ccb17f976a50",
-    "url": "/captain-quack/static/js/main.f9a4e106.chunk.js"
+    "revision": "44cabda56e0a4e53b169",
+    "url": "/captain-quack/static/js/main.190a77ea.chunk.js"
   },
   {
     "revision": "428f795870f25c290b72",
