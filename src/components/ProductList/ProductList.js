@@ -59,16 +59,16 @@ function ProductList(props) {
                                     <CustomTableRow key={product._id}>
                                         <CustomTableCell component="th" scope="row">
                                             {product.title}
-                                            <div className="product-list__description">
-                                                {product.description}
-                                            </div>
+                                            {product.description ?
+                                                <div className="product-list__description">{product.description}</div>
+                                                : ''}
                                         </CustomTableCell>
                                         <CustomTableCell align="center">{product.year}</CustomTableCell>
                                         <CustomTableCell align="center">
                                             <div className='status-color' style={{background: `${product.color}`}}/>
                                         </CustomTableCell>
                                         <CustomTableCell align="left">{product.status}</CustomTableCell>
-                                        <CustomTableCell align="left">{product.price} руб.</CustomTableCell>
+                                        <CustomTableCell width='150' align="left">{product.price} руб.</CustomTableCell>
                                         <CustomTableCell align="left">
                                             <CustomTableButton
                                                 onClick={() => eventDeleteProduct(product._id)}
