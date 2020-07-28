@@ -5,7 +5,6 @@ import {store} from './store/configureStore';
 import ErrorBoundary from './containers/ErrorBoundary';
 import App from './App';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/main.scss';
 
 ReactDOM.render(
