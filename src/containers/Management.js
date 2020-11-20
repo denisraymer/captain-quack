@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 class Management extends Component {
     eventCreateProduct = (data) => {
-        this.props.createProduct('/api/products', data);
+        this.props.createProduct('https://agile-taiga-33505.herokuapp.com/api/products', data);
     }
 
     render() {

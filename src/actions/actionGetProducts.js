@@ -9,7 +9,7 @@ function getProductsSuccess(products = []) {
     }
 }
 
-export function getProducts(url = '/api/products') {
+export function getProducts(url = 'https://agile-taiga-33505.herokuapp.com/api/products') {
     return dispatch => {
         return axios.get(`${url}`)
             .then(response => dispatch(getProductsSuccess(response.data)))

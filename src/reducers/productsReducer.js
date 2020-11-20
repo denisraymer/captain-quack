@@ -9,7 +9,7 @@ export function productsReducer(state = [], action) {
         case CREATE_PRODUCT_SUCCESS:
             return [...state, action.payload];
         case DELETE_PRODUCT_SUCCESS:
-            let productId = action.payload.config.url.replace('/api/products/', '');
+            let productId = action.payload.config.url.replace('https://agile-taiga-33505.herokuapp.com/api/products/', '');
             return state.filter(product => product._id !== productId)
         default:
             return state;

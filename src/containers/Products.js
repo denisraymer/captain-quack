@@ -11,7 +11,7 @@ class Products extends Component {
     }
 
     eventDeleteProduct = (productId) => {
-        this.props.deleteProduct(`/api/products/${productId}`);
+        this.props.deleteProduct(`https://agile-taiga-33505.herokuapp.com/api/products/${productId}`);
     }
 
     render() {
