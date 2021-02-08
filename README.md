@@ -5,7 +5,7 @@
     </a>
 
   <p align="center">
-    We check the work with the GitHub API on our own skin
+    CRUD implementation on React, Redux and REST API.
     <br />
     <br />
     <a href="https://denisraymer.github.io/staggering-search/">View Demo</a>
