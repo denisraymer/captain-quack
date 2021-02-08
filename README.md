@@ -8,15 +8,14 @@
     CRUD implementation on React, Redux and REST API.
     <br />
     <br />
-    <a href="https://denisraymer.github.io/staggering-search/">View Demo</a>
+    <a href="https://denisraymer.github.io/captain-quack/">View Demo</a>
     ·
-    <a href="https://github.com/denisraymer/staggering-search/issues">Report Bug</a>
+    <a href="https://github.com/denisraymer/captain-quack/issues">Report Bug</a>
     ·
-    <a href="https://github.com/denisraymer/staggering-search/issues">Request Feature</a>
+    <a href="https://github.com/denisraymer/captain-quack/issues">Request Feature</a>
   </p>
-
 </p>
 
-## О проекте
+<hr>
 
 <h2 align="center">...</h2>
